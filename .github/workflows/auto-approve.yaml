@@ -8,6 +8,7 @@ on:
 
 jobs:
   auto-approve:
+    if: contains(github.head_ref, 'auto/update-lint-rules')
     runs-on: ubuntu-22.04
     timeout-minutes: 5
     permissions:
